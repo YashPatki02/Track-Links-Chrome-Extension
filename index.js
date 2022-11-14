@@ -24,7 +24,7 @@ function render(leads) {
     for (let i = 0; i < leads.length; i++) {
         listItems += `
             <li>
-                <a target='_blank' href='${leads[i]}'>
+                <a target='_blank' href='${leads[i]}' id='listItem${i}'>
                     ${leads[i]}
                 </a>
             </li>
@@ -32,6 +32,8 @@ function render(leads) {
     }
     ulEl.innerHTML = listItems
 }
+
+
 
 deleteBtn.addEventListener("dblclick", function() {
     localStorage.clear()

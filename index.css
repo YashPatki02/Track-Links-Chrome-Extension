@@ -5,7 +5,7 @@ body {
     min-width: 400px;
 }
 
-input {
+#input-el {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -13,6 +13,17 @@ input {
     margin-bottom: 4px;
     margin-top: 20px;
 }
+
+#number-el {
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #AB09EB;
+    margin-bottom: 4px;
+    margin-top: 20px;
+    color: #8508B8;
+}
+
 
 h1 {
     color: #8508B8;
@@ -27,15 +38,26 @@ button {
     font-weight: bold;
 }
 
+button:hover {
+    background: #8508B8;
+    color: white;
+    border: 1px solid #8508B8;
+}
+
 #delete-btn {
     background: white;
     color: #AB09EB;
 }
 
-ul {
+#delete-btn:hover {
+    background: #AB09EB;
+    color: white;
+}
+
+ol {
     margin-top: 20px;
-    list-style: none;
-    padding-left: 0;
+    padding-left: 20;
+    color: #8508B8;
 }
 
 li {
