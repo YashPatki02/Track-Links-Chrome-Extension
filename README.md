@@ -4,3 +4,6 @@ Dowloadable Chrome Extension that allows you to save links, save inputs, and man
 
 Demo of the extension:
 ![Extension Demo](Example.png)
+
+Updated Demo of the extension:
+![Updated Extension Demo](Example1.png)
