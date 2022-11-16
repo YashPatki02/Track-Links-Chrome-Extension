@@ -6,9 +6,21 @@
         
         <h1 class="title">TrackLinks</h1>
         <input type="text" id="input-el">
-        <button id="input-btn">SAVE INPUT</button>
-        <button id="tab-btn">SAVE TAB</button>
-        <button id="delete-btn">DELETE ALL</button>
+        <div>
+            <button id="input-btn">SAVE INPUT</button>
+            <button id="tab-btn">SAVE TAB</button>
+            <button id="delete-btn">DELETE ALL</button>
+            <form>
+                <div>
+                <label for="remove-itm">REMOVE:</label>
+                <input id="remove-itm" type="text" name="text" />
+                </div>
+                <div>
+                <input id="remove-btn" type="submit" value="DELETE" />
+                </div>
+            </form>
+        </div>
+        
         <ol id="ul-el">
         </ol>
         <script src="index.js"></script>

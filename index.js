@@ -5,6 +5,8 @@ const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 const tabBtn = document.getElementById("tab-btn")
+const removeItm = document.getElementById("remove-itm")
+const removeBtn = document.getElementById("remove-btn")
 
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
@@ -33,8 +35,6 @@ function render(leads) {
     ulEl.innerHTML = listItems
 }
 
-
-
 deleteBtn.addEventListener("dblclick", function() {
     localStorage.clear()
     myLeads = []
@@ -44,6 +44,17 @@ deleteBtn.addEventListener("dblclick", function() {
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
+    localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+    render(myLeads)
+})
+
+removeBtn.addEventListener("click", function() {
+    itemIndex = removeItm.value - 1
+    if (itemIndex < 0 || itemIndex > myLeads.length) {
+        alert("Invalid Index")
+        return
+    }
+    myLeads.splice(itemIndex, 1)
     localStorage.setItem("myLeads", JSON.stringify(myLeads) )
     render(myLeads)
 })

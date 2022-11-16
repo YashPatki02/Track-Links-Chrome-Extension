@@ -24,6 +24,43 @@ body {
     color: #8508B8;
 }
 
+#remove-itm input {
+    width: 20px;
+    box-sizing: border-box;
+}
+
+#remove-itm  {
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #AB09EB;
+    margin-bottom: 4px;
+    margin-top: 20px;
+    color: #8508B8;
+}
+
+#remove-btn {
+    background: white;
+    color: #AB09EB;
+    padding: 10px 20px;
+    border: 1px solid #AB09EB;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 7px;
+}
+
+#remove-btn:hover {
+    background: #AB09EB;
+    color: white;
+    border: 1px solid #AB09EB;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
 
 h1 {
     color: #8508B8;
@@ -67,6 +104,10 @@ li {
 a {
     color: #AB09EB;
     text-decoration: none;
+}
+
+label {
+    color: #8508B8;
 }
 
 
